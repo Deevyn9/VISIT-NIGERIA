@@ -224,7 +224,7 @@ body {
 .fact__main {
     /* background-color: yellow; */
     height: 70%;
-    padding: 20px;
+    padding: 20px 40px;
     border-radius: 0 0 10px 10px; 
     display: grid;
     place-items: center;
@@ -234,6 +234,7 @@ body {
     font-size: medium;
     font-weight: 200;
     line-height: 25px;
+    letter-spacing: .3px;
 }
 
 @media (max-width: 1000px) {
@@ -242,12 +243,14 @@ body {
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 720px) {
     #hero .main-hero h1 {
         font-size: 7vw;
-        letter-spacing: 1px;
+        letter-spacing: .5px;
     }
+}
 
+@media (max-width: 680px) {
     .line-1 {
         font-size: 65%;
     }
@@ -258,5 +261,12 @@ body {
 
     .fact {
         flex-basis: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    #hero .main-hero h1 {
+        font-size: 6vw;
+        letter-spacing: .3px;
     }
 }
